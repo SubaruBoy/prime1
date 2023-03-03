@@ -1,0 +1,659 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.big{
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    border-radius: 25px;
+}
+.prime{
+    position: absolute;
+    left: 45%;
+    top: -15px;
+}
+.hy{
+    position: absolute;
+    top: 12px;
+}
+.nav-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 40px;
+}
+li{
+    display: inline;
+}
+li:hover{
+    border-bottom: 3px solid #242441 ;
+    cursor: pointer;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+.search{
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.search:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.cart{
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.cart:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #5d5d72;
+}
+.buttons{
+    position: absolute;
+    top: 45px;
+    left: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 6%;
+}
+.tx{
+    position: absolute;
+    top: 60px;
+    left: 5%;
+}
+.tx1{
+    position: absolute;
+    top: 280px;
+    left: 5%;
+}
+.total{
+    position: absolute;
+    top: 350px;
+    left: 5%;
+}
+.total1{
+    position: absolute;
+    top: 350px;
+    left: 17%;
+}
+.dol{
+    position: absolute;
+    top: 0px;
+    left: 110%;
+}
+.dol1{
+    position: absolute;
+    top: 0px;
+    left: 100%;
+}
+.choose{
+    position: absolute;
+    top: 425px;
+    left: 6%;
+}
+.arrow{
+    position: absolute;
+    top: 470px;
+    left: 6%;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+}
+.a{
+    position: absolute;
+    top: px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #242441;
+    border-radius: 50px;
+    border: none;
+}
+.a:hover{
+    cursor: pointer;
+}
+.b:hover{
+    cursor: pointer;
+}
+.b{
+    position: absolute;
+    top: 0px;
+    left: 80%;
+    width: 30px;
+    height: 30px;
+    background-color: #242441;
+    border-radius: 50px;
+    border: none;
+}
+.up{
+    position: absolute;
+    top: -19px;
+    left: 10px;
+    transform: rotate(180deg);
+}
+.down{
+    position: absolute;
+    top: -12px;
+    left: 10px;
+}
+.number2{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+}
+.buy{
+    background-color: black;
+    position: absolute;
+    top: 530px;
+    left: 5%;
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.buy:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.bag{
+    position: absolute;
+    top: -0px;
+    left: 1px;
+    background-color: burlywood;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+.now{
+    position: absolute;
+    top: 2px;
+    left: 45%;
+    color: white;
+}
+.bag1{
+    position: absolute;
+    left: 21%;
+    top: 20%;
+}
+.circle{
+    background-color: #9292a5;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 170px;
+    left: 40%;
+}
+.pri{
+    position: absolute;
+    top: -100px;
+}
+.inside{
+    background-color: white;
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50px;
+    top: 170px;
+    left: 60%;
+}
+.inside1{
+    background-color: white;
+    width: 230px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50px;
+    top: 350px;
+    right: 60%;
+}
+.cir{
+    background-color: white;
+    border-radius: 100%;
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    top: 218px;
+    left: 30%;
+    transform: rotate(-40deg);
+}
+.item{
+    position: absolute;
+    top: 100px;
+    left: 90%;
+    width: 100px;
+    height: 450px;
+}
+.hydra{
+    position: absolute;
+    background-color: white;
+    border: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    z-index: 3;
+}
+.hydra:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.ene{
+    position: absolute;
+    top: 160px;
+    background-color: white;
+    border: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    z-index: 2;
+}
+.ene:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.sti{
+    position: absolute;
+    top: 310px;
+    background-color: white;
+    border: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.sti:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.drink{
+    position: absolute;
+    top: 0px;
+    left: 105%;
+}
+.hun{
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+}
+.ori{
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    font-size: 23px;
+}
+.dri{
+    position: absolute;
+    font-size: 25px;
+    top: -10px;
+    left: 30px;
+}
+@media screen  and (max-width: 800px) 
+{
+    .big{
+        background-color: white;
+        width: 100%;
+        height: 1000px;
+        position: relative;
+        border-radius: 25px;
+    }
+    .prime{
+        position: absolute;
+        left: 35%;
+        top: -15px;
+    }
+    .hy{
+        position: absolute;
+        top: 12px;
+    }
+    .nav-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 75%;
+        position: absolute;
+        left: 5%;
+        top: 40px;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    li{
+        display: inline;
+        margin: 16px 0;
+    }
+    .burger{
+        display: block;
+        position: absolute;
+    }
+    .burger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .burger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+
+    }
+    .burger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+    nav{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3;
+    }
+    .search{
+        position: absolute;
+        top: 10px;
+        left: -1450%;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    .cart{
+        position: absolute;
+        left: 50%;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    .tx{
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .be{
+        font-size: 10px;
+        line-height: 50px;
+    }
+    .circle{
+        background-color: #9292a5;
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 320px;
+        left: 15%;
+    }
+    .pri{
+        top: -60px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+       
+        text-align: center;
+    }
+    #oh{
+        width: 250px;
+    }
+    .inside{
+        background-color: white;
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        border-radius: 50px;
+        top: 110px;
+        left: 60%;
+    }
+    .inside1{
+        background-color: white;
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        border-radius: 50px;
+        top: 190px;
+        right: 60%;
+    }
+    .cir{
+        background-color: white;
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 130px;
+        left: 33.5%;
+    }
+    .tx1{
+        position: absolute;
+        top: 540px;
+        left: 20%;
+    }
+    .total{
+        position: absolute;
+        top: 670px;
+        left: 5%;
+    }
+    .total1{
+        position: absolute;
+        top: 670px;
+        left: 53%;
+    }
+    .dol{
+        position: absolute;
+        top: 0px;
+        left: 110%;
+    }
+    .dol1{
+        position: absolute;
+        top: 0px;
+        left: 100%;
+    }
+    .choose{
+        position: absolute;
+        top: 620px;
+        left: 6%;
+    }
+    .arrow{
+        position: absolute;
+        top: 660px;
+        left: 6%;
+        width: 150px;
+        height: 30px;
+        border-radius: 50px;
+    }
+    .a{
+        position: absolute;
+        top: px;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-color: #242441;
+        border-radius: 50px;
+        border: none;
+    }
+    .a:hover{
+        cursor: pointer;
+    }
+    .b:hover{
+        cursor: pointer;
+    }
+    .b{
+        position: absolute;
+        top: 0px;
+        left: 80%;
+        width: 30px;
+        height: 30px;
+        background-color: #242441;
+        border-radius: 50px;
+        border: none;
+    }
+    .up{
+        position: absolute;
+        top: -19px;
+        left: 10px;
+        transform: rotate(180deg);
+    }
+    .down{
+        position: absolute;
+        top: -12px;
+        left: 10px;
+    }
+    .number2{
+        position: absolute;
+        top: -10px;
+        left: 50%;
+    }
+    .buy{
+        background-color: black;
+        position: absolute;
+        top: 750px;
+        left: 5%;
+        width: 170px;
+        height: 50px;
+        border-radius: 50px;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    .buy:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    .bag{
+        position: absolute;
+        top: -0px;
+        left: 1px;
+        background-color: burlywood;
+        width: 42px;
+        height: 42px;
+        border-radius: 100%;
+        border: 2px solid white;
+    }
+    .now{
+        position: absolute;
+        top: 2px;
+        left: 45%;
+        color: white;
+    }
+    .bag1{
+        position: absolute;
+        left: 21%;
+        top: 20%;
+    }
+    .item{
+        position: absolute;
+        top: 830px;
+        left: 5%;
+        width: 260px;
+        height: 135px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .hydra{
+        position: absolute;
+        width: 120px;
+        border: none;
+        left: -8px;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        z-index: 3;
+    }
+    .hydra:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    .p12{
+        width: 35px;
+    }
+    .ene{
+        width: 120px;
+        position: absolute;
+        top: 0px;
+        left: 110px;
+        border: none;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        z-index: 2;
+    }
+    .ene:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        z-index: 4;
+    }
+    .p23{
+        width: 35px;
+    }
+    .sti{
+        width: 80px;
+        height: 135px;
+        position: absolute;
+        top: 0px;
+        left: 213px;
+        border: none;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        z-index: 3;
+    }
+    .hd{
+        position: absolute;
+        top: 95px;
+    }
+    .sti:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    .p34{
+        width: 35px;
+    }
+    .drink{
+        position: absolute;
+        top: 0px;
+        left: 85%;
+    }
+    .hun{
+        position: absolute;
+        left: 15px;
+        top: -10px;
+        font-size: 15px;
+    }
+    .ori{
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      font-size: 15px;
+    }
+    .dri{position: absolute;
+        top: -15px;
+        left: 10px;
+        width: 150px;
+    }
+    .me{position: absolute;
+        top: -8px;
+        left: 30px;
+        font-size: 20px;
+    }
+    .tion{
+        margin-left:-17% ;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+    <link rel="stylesheet" href="prime.css">
+</head>
+<body>
+    <div class="big">
+        <div class="prime">
+            <img src="Prime_Hydration_logo.png" alt="" width="120px" class="hy">
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <b><li>HOME</li></b>
+                <b><li>PRODUCT</li></b>
+                <b><li>ABOUT</li></b>
+                <b><li>SUPPORT</li></b>
+            </ul>
+        </nav>
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="buttons">
+            <button style="background-color: white; border: none;"><img src="search.svg" alt="" class="search"></button>
+            <button style="background-color:#242441; border: none; border-radius: 100%; width: 30px; height: 30px;" class="cart"><img src="cart.svg" alt=""></button>
+        </div>
+        <div class="tx">
+            <b><p style=" font-size: 60px;" class="be">ALWAYS BE <br>
+            AT YOUR <br>
+            <span>PRIME</span></p></b>
+        </div>
+        <div class="tx1">
+            <p style="font-size: 40px;" class="tion"><span style="color: #7d7d92;"> Hydration </span></p> <p style="font-size: 40px;" class="drink"> <span style="color: rgb(252, 137, 137)
+            ;">Drink</span></p>
+        </div>
+        <div class="total">
+         <p style="color: #7d7d92; font-size: 30px;">Total Order: </p>
+        <p style="font-size: 30px;" class="dol1">$</p><p class="dol" style="font-size: 30px;"> 2.89</p>
+        </div>
+        <div class="choose"><p><b>Choose Your</b></p></div>
+        <div class="arrow">
+            <button class="a" style="font-size: 20px; color: white;"> <p class="up">^</p> </button>
+            <p class="number2"><b>1</b></p>
+            <button class="b" style="font-size: 20px; color: white;"> <p class="down">^</p> </button>
+        </div>
+        <button class="buy">
+            <div class="bag"><img src="bag.svg" alt="" width="25px" class="bag1"></div>
+            <p class="now"><b>Buy Now</b></p>
+        </button>
+        <div class="circle">
+            <div class="pri"><img src="prime12.png" alt="" id="oh"></div>
+            <div class="inside"><p class="dri"><b>Drink Prime</b></p></div>
+            <div class="inside1"><p class="dri"><b>Primed Up</b></p></div>
+            <div class="cir">
+                <p class="hun"><b> 100%</b></p>
+                <p class="ori"><b> Original <br>Product</b></p>
+            </div>
+        </div>
+        <div class="item">
+            <button class="hydra" onclick="changeImage('prime12.png')"> <img src="prime12.png" alt="" width="80px"><b>Prime Hydration</b></button>
+            <button class="ene" onclick="changeImage('prime23.png')"> <img src="prime23.png" alt="" width="80px"> <b>Prime Energy</b></button>
+            <button class="sti" onclick="changeImage('prime34.png')"> <img src="prime34.png" alt="" width="80px"><b><p class="hd">Prime Hydration/sticks</p></b></button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        head = document.querySelector('.number2')
+        head2 = document.querySelector('.dol')
+        btn = document.querySelector('.b')
+        btn2 = document.querySelector('.a')
+        counter = 0
+        btn.onclick = function box(){
+            counter++
+            head.textContent = counter
+            head2.textContent = counter * 2.89
+        }
+            btn2.onclick = function box(){
+            counter--
+            head.textContent = counter
+            head2.textContent = counter * 2.89
+        }
+
+        function changeImage(fileName){
+             let img = document.querySelector('#oh');
+            img.setAttribute("src", fileName);
+        }
+        btn = document.querySelector('.hydra')
+        btn.addEventListener('click', ()=> {
+            head = document.querySelector('.tion');
+            head.textContent = "Hydration";
+            head.style.color = "#7d7d92";
+        })
+        btn = document.querySelector('.ene')
+        btn.addEventListener('click', ()=> {
+            head = document.querySelector('.tion');
+            head.textContent = "Energy";
+            head.style.color = "#7d7d92";
+        })
+        btn = document.querySelector('.sti')
+        btn.addEventListener('click', ()=> {
+            head = document.querySelector('.tion');
+            head.textContent = "Hydration";
+            head.style.color = "#7d7d92";
+        })
+    </script>
+</body>
+</html>
